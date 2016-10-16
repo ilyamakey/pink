@@ -1,0 +1,26 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "pink landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyamakey/pink.git"
+  },
+  "author": "Ilya Makey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyamakey/pink/issues"
+  },
+  "homepage": "https://github.com/ilyamakey/pink#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-less": "^3.1.0"
+  }
+}
