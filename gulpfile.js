@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var path = require('path');
 var prefix = require('gulp-autoprefixer');
 var minCss = require('gulp-clean-css');
-var concatCss = require('gulp-concat-css');
+//var concatCss = require('gulp-concat-css');
 
 gulp.task('default', function() {
     return gulp.src('components/main.less')
@@ -12,3 +12,8 @@ gulp.task('default', function() {
         .pipe(minCss())
         .pipe(gulp.dest('build/'))
 });
+
+gulp.task('watch', function(){
+    gulp.watch('components/*.less', ['default']);
+});
+
