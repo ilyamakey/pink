@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var path = require('path');
 var prefix = require('gulp-autoprefixer');
 var minCss = require('gulp-clean-css');
-//var concatCss = require('gulp-concat-css');
+var svgSprite = require('gulp-svg-sprites');
 
 gulp.task('default', function() {
     return gulp.src('components/main.less')
@@ -15,5 +15,11 @@ gulp.task('default', function() {
 
 gulp.task('watch', function(){
     gulp.watch('components/*.less', ['default']);
+});
+
+gulp.task('sprites', function () {
+    return gulp.src('img/svg/*.svg')
+        .pipe(svgSprite({mode: "symbols"}))
+        .pipe(gulp.dest("build/"));
 });
 
