@@ -17,9 +17,9 @@ gulp.task('watch', function(){
     gulp.watch('components/*.less', ['default']);
 });
 
-gulp.task('sprites', function () {
+gulp.task('sprite', function () {
     return gulp.src('img/svg/*.svg')
-        .pipe(svgSprite({mode: "symbols"}))
+        .pipe(svgSprite({mode: "defs"}))
         .pipe(gulp.dest("build/"));
 });
 
