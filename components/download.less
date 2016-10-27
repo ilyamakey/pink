@@ -1,3 +1,11 @@
+//mixins
+.social-icon() {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+}
+
 .download {
   display: flex;
   flex-direction: column;
@@ -21,26 +29,25 @@
 
  &__social {
     display: flex;
+    width: 240px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0px;
     margin: 0px;
     list-style: none;
 
    &_apple {
-     width: 70px;
-     height: 70px;
-     background: url("../img/svg/apple-logo.svg") no-repeat transparent;
+     .social-icon;
+     background: url("../img/svg/apple-logo.svg") no-repeat transparent bottom;
+
    }
    &_android {
-     width: 70px;
-     height: 70px;
-     background: url("../img/svg/android-logo.svg") no-repeat transparent;
+     .social-icon;
+     background: url("../img/svg/android-logo.svg") no-repeat transparent bottom;
    }
    &_windows {
-     width: 70px;
-     height: 70px;
-     background: url("../img/svg/microsoft-logo.svg") no-repeat transparent;
+     .social-icon;
+     background: url("../img/svg/microsoft-logo.svg") no-repeat transparent bottom;
    }
   }
 
