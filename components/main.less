@@ -1,5 +1,6 @@
 @import "normalizeCSS";
 @import "variables";
+@import "font";
 @import "header";
 @import "nav-toggle";
 @import "navigation";
@@ -10,37 +11,17 @@
 @import "price";
 @import "map";
 
-@font-face {
-  font-family: "Open Sans";
-  src: url(../font/OpenSans-Light.ttf);
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../font/OpenSans-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../font/OpenSans-Semibold.ttf);
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../font/OpenSans-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../font/OpenSans-ExtraBold.ttf);
-  font-weight: 800;
-  font-style: normal;
-}
+
 html {
   font-size: @base-font-size;
   font-family: @font-family;
+}
+h1 {
+  font-size: @24;
+  @media (min-width: 729px) {
+    font-size: @32;
+  }
+  @media (min-width: 1024px) {
+    font-size: @50;
+  }
 }
