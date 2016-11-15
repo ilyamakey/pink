@@ -1,6 +1,26 @@
 @import "normalizeCSS";
 @import "variables";
 @import "font";
+
+html {
+  font-size: @base-font-size;
+  font-family: @font-family;
+}
+h1 {
+  font-size: @24;
+  font-weight: @font-light;
+  @media (min-width: 729px) {
+    font-size: @32;
+  }
+  @media (min-width: 1024px) {
+    font-size: @50;
+  }
+}
+h2 {
+  font-size: @18;
+  font-weight: @font-bold;
+}
+
 @import "header";
 @import "nav-toggle";
 @import "navigation";
@@ -12,16 +32,3 @@
 @import "map";
 
 
-html {
-  font-size: @base-font-size;
-  font-family: @font-family;
-}
-h1 {
-  font-size: @24;
-  @media (min-width: 729px) {
-    font-size: @32;
-  }
-  @media (min-width: 1024px) {
-    font-size: @50;
-  }
-}
