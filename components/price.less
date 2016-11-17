@@ -2,3 +2,39 @@
   background-color: @grey;
 
 }
+.price-list {
+  line-height: @30;
+
+  &__table {
+
+
+  }
+
+  &__slide{
+    display: flex;
+    flex-direction: column;
+    font-size: @14;
+    background-color: @white;
+
+    &__header {
+      color: @white;
+      font-size: @18;
+      font-weight: @font-bold;
+      background-color: @dark-blue;
+    }
+
+    &__row {
+      display: flex;
+
+      &__name {
+        width: 80%;
+      }
+      &__status {
+        width: 20%;
+      }
+
+    }
+
+  }
+
+}
