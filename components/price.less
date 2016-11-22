@@ -2,60 +2,72 @@
   display: flex;
   flex-direction: column;
   background-color: @grey;
-}
-.price-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 60px 0 30px;
-  line-height: @30;
-  overflow: hidden;
-
-  &__table {
-    position: relative;
-    display: flex;
-
-  }
-
-  &__slide{
-    display: flex;
-    flex-direction: column;
-    width: 275px;
-    flex-shrink: 0;
-    border: 1px solid red;
-    font-size: @14;
-    background-color: @white;
-
-    &__header {
-      color: @white;
-      font-size: @18;
-      font-weight: @font-bold;
-      text-align: center;
-      background-color: @dark-blue;
-      h2 {
-        margin: 15px 0 10px 0;
-      }
-      span {
-        display: inline-block;
-        font-size: @24;
-        font-weight: @font-light;
-        margin-bottom: 15px;
-
-      }
-    }
-
-    &__row {
-      display: flex;
-
-      &__name {
-        width: 80%;
-      }
-      &__status {
-        width: 20%;
-      }
-    }
-  }
+//}
+//.price-list {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  margin: 60px 0 30px;
+//  line-height: @30;
+//  overflow: hidden;
+//
+//  &__table {
+//    position: relative;
+//    display: flex;
+//
+//  }
+//
+//  &__slide{
+//    display: flex;
+//    flex-direction: column;
+//    width: 275px;
+//    flex-shrink: 0;
+//    border: 1px solid @dark-grey;
+//    font-size: @14;
+//    background-color: @white;
+//
+//    &__header {
+//      color: @white;
+//      font-size: @18;
+//      font-weight: @font-bold;
+//      text-align: center;
+//      background-color: @dark-blue;
+//      h2 {
+//        margin: 15px 0 10px 0;
+//      }
+//      span {
+//        display: inline-block;
+//        font-size: @24;
+//        font-weight: @font-light;
+//        margin-bottom: 15px;
+//
+//      }
+//    }
+//
+//    &__row {
+//      display: flex;
+//
+//      &__name {
+//        width: 80%;
+//      }
+//      &__status {
+//        width: 20%;
+//      }
+//    }
+//  }
   .pagination {
     margin: 30px 0 0 0;
   }
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 2px solid @dark-grey;
+
+}
+thead {
+  background-color: @dark-blue;
+  color: @white;
+  td {border-color: @grey;}
 }
