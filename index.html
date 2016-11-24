@@ -100,89 +100,42 @@
     </section>
 </div>
 <div class="price">
-    <section class="price-list">
-        <div class="price-list__table">
-            <div class="price-list__slide">
-                <div class="price-list__slide__header"><h2>БАЗА</h2><span>3,99 USD</span></div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">РОЗОВЫЙ ФИЛЬТР</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">СМАЙЛИКИ</div>
-                    <div class="price-list__slide__row__status">нет :(</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">КОММЕНТАРИИ</div>
-                    <div class="price-list__slide__row__status">нет :(</div>
-                </div>
-            </div>
-            <div class="price-list__slide">
-                <div class="price-list__slide__header"><h2>СТАНДАРТ</h2><span>3,99USD</span></div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">РОЗОВЫЙ ФИЛЬТР</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">СМАЙЛИКИ</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">КОММЕНТАРИИ</div>
-                    <div class="price-list__slide__row__status">нет :(</div>
-                </div>
-            </div>
-            <div class="price-list__slide">
-                <div class="price-list__slide__header"><h2>АНЛИМ</h2><span>9,99USD</span></div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">РОЗОВЫЙ ФИЛЬТР</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">СМАЙЛИКИ</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-                <div class="price-list__slide__row">
-                    <div class="price-list__slide__row__name">КОММЕНТАРИИ</div>
-                    <div class="price-list__slide__row__status">есть!</div>
-                </div>
-            </div>
-        </div>
+<section class="table-wrapper">
+        <table class="price-list">
+            <thead class="price-list__head">
+            <tr>
+                <td class="price-list__header">grey</td>
+                <td class="price-list__header"><h2>БАЗА</h2><span>3,99 USD</span></td>
+                <td class="price-list__header"><h2>СТАНДАРТ</h2><span>3,99USD</span></td>
+                <td class="price-list__header"><h2>АНЛИМ</h2><span>9,99USD</span></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="price-list__item">РОЗОВЫЙ ФИЛЬТР</td>
+                <td class="price-list__item"><div class="price-list__item__name">РОЗОВЫЙ ФИЛЬТР</div><div class="price-list__item__status">есть!</div></td>
+                <td class="price-list__item"><div class="price-list__item__name">РОЗОВЫЙ ФИЛЬТР</div><div class="price-list__item__status">есть!</div></td>
+                <td class="price-list__item"><div class="price-list__item__name">РОЗОВЫЙ ФИЛЬТР</div><div class="price-list__item__status">есть!</div></td>
+            </tr>
+            <tr>
+                <td>СМАЙЛИКИ</td>
+                <td><div class="price-list__item__name">СМАЙЛИКИ</div><div class="price-list__item__status">нет :(</div></td>
+                <td><div class="price-list__item__name">СМАЙЛИКИ</div><div class="price-list__item__status">нет :(</div></td>
+                <td><div class="price-list__item__name">СМАЙЛИКИ</div><div class="price-list__item__status">есть!</div></td>
+            </tr>
+            <tr>
+                <td>КОММЕНТАРИИ</td>
+                <td><div class="price-list__item__name">КОММЕНТАРИИ</div><div class="price-list__item__status">нет :(</div></td>
+                <td><div class="price-list__item__name">КОММЕНТАРИИ</div><div class="price-list__item__status">нет :(</div></td>
+                <td><div class="price-list__item__name">КОММЕНТАРИИ</div><div class="price-list__item__status">нет :(</div></td>
+            </tr>
+            </tbody>
+        </table>
         <div class="pagination">
             <div class="pagination__circle"></div>
             <div class="pagination__circle_active"></div>
             <div class="pagination__circle"></div>
         </div>
-        <table>
-            <thead>
-            <tr>
-                <td>grey</td>
-                <td><h2>БАЗА</h2><span>3,99 USD</span></td>
-                <td><h2>СТАНДАРТ</h2><span>3,99USD</span></td>
-                <td><h2>АНЛИМ</h2><span>9,99USD</span></td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>РОЗОВЫЙ ФИЛЬТР</td>
-                <td><div class="name">РОЗОВЫЙ ФИЛЬТР</div><div class="status">есть!</div></td>
-                <td><div class="name">РОЗОВЫЙ ФИЛЬТР</div><div class="status">есть!</div></td>
-                <td><div class="name">РОЗОВЫЙ ФИЛЬТР</div><div class="status">есть!</div></td>
-            </tr>
-            <tr>
-                <td>СМАЙЛИКИ</td>
-                <td><div class="name">СМАЙЛИКИ</div><div class="status">нет :(</div></td>
-                <td><div class="name">СМАЙЛИКИ</div><div class="status">нет :(</div></td>
-                <td><div class="name">СМАЙЛИКИ</div><div class="status">есть!</div></td>
-            </tr>
-            <tr>
-                <td>КОММЕНТАРИИ</td>
-                <td><div class="name">КОММЕНТАРИИ</div><div class="status">нет :(</div></td>
-                <td><div class="name">КОММЕНТАРИИ</div><div class="status">нет :(</div></td>
-                <td><div class="name">КОММЕНТАРИИ</div><div class="status">нет :(</div></td>
-            </tr>
-            </tbody>
-        </table>
     </section>
 </div>
 <div class="contacts">
