@@ -38,10 +38,29 @@
       }
     }
 
+    &_hit {
+      min-width: 270px;
+      border: solid @grey;
+      border-width: 2px 2px 0 2px;
+      color: @white;
+      font-size: @18;
+      font-weight: @font-bold;
+      text-align: center;
+      background-color: @dark-blue;
+
+      &::before {
+        display: block;
+        width: 70px;
+        //position: absolute;
+        content: url("../img/hit.png");
+      }
+    }
+
     h2 {
       width: 50%;
       margin: 15px auto 10px auto;
     }
+
     span {
       display: inline-block;
       font-size: @24;
