@@ -26,10 +26,11 @@
     min-width: 270px;
     border: solid @grey;
     border-width: 2px 2px 0 2px;
+    padding: 0;
     color: @white;
     font-size: @18;
     font-weight: @font-bold;
-    text-align: center;
+    //text-align: center;
     background-color: @dark-blue;
 
     &:first-child {
@@ -38,34 +39,25 @@
       }
     }
 
-    &_hit {
-      min-width: 270px;
-      border: solid @grey;
-      border-width: 2px 2px 0 2px;
-      color: @white;
-      font-size: @18;
-      font-weight: @font-bold;
-      text-align: center;
-      background-color: @dark-blue;
-
-      &::before {
-        display: block;
-        width: 70px;
-        //position: absolute;
+    &_hit::before {
+        float: left;
         content: url("../img/hit.png");
-      }
     }
 
     h2 {
+      display: block;
       width: 50%;
+      text-align: center;
       margin: 15px auto 10px auto;
     }
 
     span {
-      display: inline-block;
+      display: block;
+      width: 50%;
+      text-align: center;
       font-size: @24;
       font-weight: @font-light;
-      margin-bottom: 15px;
+      margin: 0 auto 15px auto;
     }
   }
 
