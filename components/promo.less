@@ -3,8 +3,12 @@
   justify-content: flex-end;
   flex-direction: column;
   height: 488px;
-  //padding-top: 1px;
   background: url("../img/background-1@1x.jpg") no-repeat @dark-blue center;
+  @media (min-width: 700px) {
+    background: transparent;
+    z-index: 1;
+
+  }
 
 
   &__title {
@@ -20,10 +24,17 @@
   }
 
   &__hand {
-      width: 258px;
-      height: 286px;
-      background: url("../img/iphone-hand-1.png") no-repeat center;
-
+    width: 258px;
+    height: 286px;
+    background: url("../img/iphone-hand-1.png") no-repeat center;
+    @media (min-width: 700px) {
+      position: absolute;
+      width: 516px;
+      height: 572px;
+      top: 153px;
+      right: 25px;
+      background: url("../img/iphone-hand-1@2x.png") no-repeat center;
+      z-index: 0;
+    }
   }
-
 }
