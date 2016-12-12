@@ -13,9 +13,10 @@
   background-color: @dark;
   color: @white;
   @media (min-width: 700px) {
-    background: lime;
-    width: 280px;
-    height: 250px;
+    background: transparent;
+    width: 300px;
+    //height: 250px;
+    margin-left: 4%;
     z-index: 1;
 
   }
@@ -32,6 +33,12 @@
     font-size: @18;
     line-height: 18px;
     font-weight: @font-bold;
+    @media (min-width: 700px) {
+      width: 275px;
+      padding: 7px 30px;
+      height: 60px;
+
+    }
   }
 
  &__social {
@@ -66,6 +73,11 @@
     font-size: @14;
     line-height: 24px;
     text-align: center;
+    @media (min-width: 700px) {
+      font-size: @18;
+      width: 100%;
+
+    }
   }
 
 }
