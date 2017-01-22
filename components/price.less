@@ -8,19 +8,25 @@
    margin: 60px 0 30px;
    line-height: @30;
    overflow: hidden;
-
    .pagination {
      margin: 30px auto 0;
    }
+
 }
 
 .price-list {
-  //width: 1100px;
   position: relative;
   right: 250px;
   font-size: @14;
   background-color: @white;
   border-collapse: collapse;
+  @media (min-width: 700px) {
+    position: static;
+    margin: auto;
+    right: 0;
+
+
+  }
 
   &__header {
     min-width: 270px;
@@ -30,25 +36,47 @@
     color: @white;
     font-size: @18;
     font-weight: @font-bold;
-    //text-align: center;
     background-color: @dark-blue;
+    @media (min-width: 700px) {
+      min-width: 150px;
+
+    }
 
     &:first-child {
+      background-color: @grey;
       @media (max-width: 400px) {
         .no-display;
+
       }
     }
 
     &_hit::before {
         float: left;
         content: url("../img/hit.png");
+        @media (min-width: 700px) {
+          content: " ";
+          position: absolute;
+          display: block;
+          width: 60px;
+          height: 60px;
+          background: url("../img/hit.png") no-repeat;
+          background-size: contain;
+
+      }
     }
 
-    h2 {
+    h3 {
       display: block;
       width: 50%;
       text-align: center;
       margin: 15px auto 10px auto;
+      @media (min-width: 700px) {
+        width: auto;
+        margin: 10px auto 0px auto;
+
+
+      }
+
     }
 
     span {
@@ -58,12 +86,17 @@
       font-size: @24;
       font-weight: @font-light;
       margin: 0 auto 15px auto;
+      @media (min-width: 700px) {
+        font-size: @18;
+        margin: 0 auto 10px auto;
+      }
     }
   }
 
   &__item {
     border: 2px solid @light-grey;
     padding: 20px;
+
 
     &:first-child {
       @media (max-width: 400px) {
@@ -74,6 +107,9 @@
     &__name {
       display: inline-block;
       width: 80%;
+      @media (min-width: 700px) {
+        .no-display();
+      }
     }
     &__status {
 
@@ -83,6 +119,11 @@
         height: 30px;
         vertical-align: middle;
         background: url("../img/svg/yes-green.svg") no-repeat;
+        @media (min-width: 700px) {
+          margin: auto;
+          display: block;
+        }
+
       }
       &_no {
         display: inline-block;
@@ -90,6 +131,10 @@
         height: 30px;
         vertical-align: middle;
         background: url("../img/svg/no-orange.svg") no-repeat;
+        @media (min-width: 700px) {
+          margin: auto;
+          display: block;
+        }
       }
 
     }

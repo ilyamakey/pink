@@ -1,3 +1,32 @@
 .effect {
   display: none;
+  @media (min-width: 700px) {
+    display: flex;
+    font-size: @14;
+    line-height: @24;
+
+  }
+
+  &__watch {
+    width: 262px;
+    height: 302px;
+    flex-shrink: 0;
+    margin: 7% 5%;
+    background: url("../img/24-m.png") no-repeat center;
+  }
+
+  &__article {
+    width: 45%;
+    margin: 7% 0 7% 3px; //picture has different size from above picture in layout
+
+    &__title {
+      width: 55%;
+    }
+
+  }
+
+  a {
+    color: @pink;
+  }
+
 }

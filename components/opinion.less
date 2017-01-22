@@ -11,9 +11,38 @@
     font-size: @14;
     line-height: @30;
     text-align: center;
+    @media (min-width: 700px) {
+      font-size: @18;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    &__article {
+      @media (min-width: 700px) {
+        order: 2;
+        margin-bottom: 0;
+        &::after {
+          content: "25 лет, водитель трамвая";
+          display: block;
+          font-size: @14;
+          font-weight: @font-regular;
+        }
+      }
+    }
+    &__text {
+      order: 1;
+    }
 
     .pagination {
       margin: 20px auto 0;
+      @media (min-width: 700px) {
+        order: 3;
+        width: 103px;
+        margin: 20px auto;
+
+      }
+
     }
 
   }

@@ -3,6 +3,10 @@
   height: 208px;
   background: url("../img/map-320.png") no-repeat;
   background-size: contain;
+  @media (min-width: 700px) {
+    background: url("../img/map-720.jpg") no-repeat;
+    height: 400px;
+  }
 
   &::before {
     content: " ";
@@ -12,6 +16,9 @@
     height: 40px;
     background: url("../img/bg-triangle.svg") no-repeat top;
     background-size: contain;
+    @media (min-width: 700px) {
+      height: 100px;
+    }
 
   }
 }
