@@ -26,6 +26,20 @@
       }
     }
   }
+
+  &__promo {
+    display: flex;
+    //align-items: center;
+    font-size: @14;
+    font-weight: @font-regular;
+    line-height: @18;
+    height: 60px;
+    outline: 1px solid red;
+
+    &__item {
+      display: inline-block;
+    }
+  }
 }
 
 .icon-twitter {
@@ -38,4 +52,21 @@
 
 .icon-youtube {
   background: url("../img/svg/youtube.svg") no-repeat center;
+}
+
+.a-logo::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  //align-self: flex-end;
+  background: url("../img/svg/a-logo.svg") no-repeat center;
+}
+
+.academy-logo::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/svg/academy-logo.svg") no-repeat center;
 }
