@@ -1,10 +1,12 @@
 .footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  height: 125px;
 
   &__logo {
   width: 145px;
-  height: 40px;
+  height: 55px;
   background: url("../img/Pink-logo-footer-2@1x.png") no-repeat;
   }
 
@@ -33,12 +35,11 @@
     font-size: @14;
     font-weight: @font-regular;
     line-height: @18;
-    outline: 1px solid red;
-
 
     &__item {
       display: inline-block;
-      background: lime;
+      vertical-align: middle;
+
 
     }
   }
@@ -59,17 +60,20 @@
 .a-logo::after {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  //align-self: flex-end;
+  width: 32px;
+  height: 32px;
+  margin: 0px 10px;
+  vertical-align: middle;
   background: url("../img/svg/a-logo.svg") no-repeat center;
 }
 
 .academy-logo::after {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin: 0px 10px;
   background: url("../img/svg/academy-logo.svg") no-repeat center;
 }
 
