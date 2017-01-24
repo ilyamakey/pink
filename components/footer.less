@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  align-items: flex-start;
 
   &__logo {
   width: 145px;
@@ -9,9 +10,10 @@
 
   &__social {
 
-
     &_list {
       list-style: none;
+      padding: 0;
+      margin: 0;
 
       &_item {
         display: inline-block;
@@ -28,16 +30,16 @@
   }
 
   &__promo {
-    display: flex;
-    //align-items: center;
     font-size: @14;
     font-weight: @font-regular;
     line-height: @18;
-    height: 60px;
     outline: 1px solid red;
+
 
     &__item {
       display: inline-block;
+      background: lime;
+
     }
   }
 }
@@ -70,3 +72,4 @@
   height: 30px;
   background: url("../img/svg/academy-logo.svg") no-repeat center;
 }
+
