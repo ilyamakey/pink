@@ -31,12 +31,16 @@
     background-color: transparent;
     color: @white;
     font-size: @18;
-    line-height: 18px;
+    line-height: @18;
     font-weight: @font-bold;
     @media (min-width: 700px) {
       width: 275px;
       padding: 7px 30px;
       height: 60px;
+    }
+    @media (min-width: 1200px) {
+      width: 300px;
+      font-size: @21;
 
     }
   }
@@ -71,11 +75,15 @@
     color: @white;
     font-weight: @font-light;
     font-size: @14;
-    line-height: 24px;
+    line-height: @24;
     text-align: center;
     @media (min-width: 700px) {
       font-size: @18;
       width: 100%;
+    }
+    @media (min-width: 1200px) {
+      text-align: center;
+      letter-spacing: -0.05rem;
 
     }
   }

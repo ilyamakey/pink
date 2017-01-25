@@ -1,0 +1,16 @@
+.commercial {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url("../img/background-1@1x.jpg") no-repeat @dark-blue center top;
+  background-size: 700px 520px;
+  @media (min-width: 700px) {
+    align-items: flex-start;
+    background: url("../img/background-2@1x.jpg") no-repeat @dark-blue center top;
+    background-size: 1200px 729px;
+  }
+  @media (min-width: 1200px) {
+    background: url("../img/background_1200.JPG") no-repeat @dark-blue center top;
+    background-size: 1200px 870px;
+  }
+}
