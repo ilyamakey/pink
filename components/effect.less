@@ -4,7 +4,13 @@
     display: flex;
     font-size: @14;
     line-height: @24;
-
+  }
+  @media (min-width: 1200px) {
+    width: 100%;
+    font-size: @18;
+    line-height: @30;
+    justify-content: center;
+    background-color: @grey;
   }
 
   &__watch {
@@ -13,20 +19,30 @@
     flex-shrink: 0;
     margin: 7% 5%;
     background: url("../img/24-m.png") no-repeat center;
+    @media (min-width: 1200px) {
+      //margin: 7% 5%;
+    }
   }
 
   &__article {
     width: 45%;
     margin: 7% 0 7% 3px; //picture has different size from above picture in layout
+    @media (min-width: 1200px) {
+      margin: 7% 5% 7% 5%;
+    }
 
     &__title {
       width: 55%;
     }
 
-  }
+    &__text {
+      @media (min-width: 1200px) {
+        margin-bottom: 4%;
+      }
+    }
 
-  a {
-    color: @pink;
+    &__link {
+      color: @pink;
+    }
   }
-
 }
