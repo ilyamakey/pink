@@ -16,6 +16,9 @@
       display: flex;
       flex-direction: column;
     }
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
 
     &::before {
       content: "";
@@ -38,9 +41,23 @@
           font-weight: @font-regular;
         }
       }
+      @media (min-width: 1200px) {
+        font-size: @24;
+      }
     }
     &__text {
       order: 1;
+      @media (min-width: 1200px) {
+        display: inline-block;
+        &::before {
+          content: "";
+          width: 25px;
+          height: 40px;
+          display: inline-block;
+          vertical-align: middle;
+          background: url("../img/svg/arrow-left.svg") no-repeat center;
+        }
+      }
     }
 
     .pagination {
@@ -51,9 +68,6 @@
         margin: 20px auto;
 
       }
-
     }
-
   }
-
 }
