@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -12,10 +10,16 @@
   text-align: center;
   font-size: @24;
   margin-bottom: 20px;
+  @media (min-width: 1300px) {
+    width: 70%;
+  }
 
   &__header {
     width: 70%;
     @media (min-width: 700px) {
+      margin-bottom: 25px;
+    }
+    @media (min-width: 1200px) {
       margin-bottom: 25px;
     }
   }
@@ -30,11 +34,32 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
   &__item {
     margin: 0 0 20px 0;
     @media (min-width: 700px){
       margin: 0 0 50px 0;
+    }
+    @media (min-width: 1200px) {
+      //margin: 0 1%;
+    }
+    &-call {
+      order: 1;
+    }
+    &-email {
+      @media (min-width: 1200px) {
+        order: 3;
+      }
+    }
+    &-visit {
+      @media (min-width: 1200px) {
+        order: 2;
+        width: 290px;
+      }
     }
 
     &__header {
@@ -43,7 +68,6 @@
         font-size: 1.8rem;
       }
     }
-
     &__text {
       color: @pink;
     }

@@ -5,13 +5,12 @@
 }
 
 .table-wrapper {
-   margin: 60px 0 30px;
+   margin: 2% 0 2%;
    line-height: @30;
    overflow: hidden;
    .pagination {
-     margin: 30px auto 0;
+     margin: 2% auto 0;
    }
-
 }
 
 .price-list {
@@ -24,8 +23,9 @@
     position: static;
     margin: auto;
     right: 0;
-
-
+  }
+  @media (min-width: 1200px) {
+    font-size: @18;
   }
 
   &__header {
@@ -39,9 +39,11 @@
     background-color: @dark-blue;
     @media (min-width: 700px) {
       min-width: 150px;
-
     }
-
+    @media (min-width: 1200px) {
+      min-width: 233px;
+    }
+    
     &:first-child {
       background-color: @grey;
       @media (max-width: 400px) {
@@ -73,8 +75,9 @@
       @media (min-width: 700px) {
         width: auto;
         margin: 10px auto 0px auto;
-
-
+      }
+      @media (min-width: 1200px) {
+        font-size: @18;
       }
 
     }
@@ -89,6 +92,9 @@
       @media (min-width: 700px) {
         font-size: @18;
         margin: 0 auto 10px auto;
+      }
+      @media (min-width: 1200px) {
+        font-size: @24;
       }
     }
   }
