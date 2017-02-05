@@ -1,11 +1,15 @@
 .map {
   //width: 320px;
   height: 208px;
-  background: url("../img/map-320.png") no-repeat;
-  background-size: contain;
+  background: url("../img/map500-300.jpg") center no-repeat;
+  background-size: cover;
   @media (min-width: 700px) {
-    background: url("../img/map-720.jpg") no-repeat;
+    background: url("../img/map960-530.jpg") center no-repeat;
+    background-size: cover;
     height: 400px;
+  }
+  @media (min-width: 1200px) {
+    height: 525px;
   }
 
   &::before {
@@ -16,8 +20,17 @@
     height: 40px;
     background: url("../img/bg-triangle.svg") no-repeat top;
     background-size: contain;
+    @media (min-width: 390px) {
+      height: 100px;
+    }
     @media (min-width: 700px) {
       height: 100px;
+    }
+    @media (min-width: 900px) {
+      height: 150px;
+    }
+    @media (min-width: 1400px) {
+      height: 180px;
     }
 
   }

@@ -1,16 +1,19 @@
 .navigation {
   display: none;
-  @media (min-width: 701px) {
+  @media (min-width: 900px) {
     display: block;
   }
 
   &__link {
-    margin: 0 35px;
+    margin: 0 32px;
     font-size: @18;
     font-weight: @font-regular;
     color: @white;
     line-height: @18;
     text-decoration: none;
+    @media (min-width: 1200px) {
+      margin: 0 35px;
+    }
 
   }
 }
