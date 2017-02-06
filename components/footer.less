@@ -15,6 +15,7 @@
     &__social {
 
       &_list {
+        display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -23,12 +24,9 @@
           display: inline-block;
           width: 45px;
           height: 45px;
+          margin: 0 5px;
           border-radius: 50%;
           border: 2px solid @footer-grey;
-
-          a {
-            display: block;
-          }
         }
       }
     }
@@ -42,8 +40,6 @@
     &__item {
       display: inline-block;
       vertical-align: middle;
-
-
     }
   }
 }
