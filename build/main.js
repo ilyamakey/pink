@@ -18,7 +18,6 @@ slider.addEventListener('mousedown', function(e) {
     }
   };
 
-
   function switchPagination () {
     var pagination = document.getElementById('js-table_pagination');
     var circle = pagination.getElementsByTagName('div');
