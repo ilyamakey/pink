@@ -1,4 +1,4 @@
-#nav-toggle {
+.nav-toggle {
   height: 24px;
   width: 50px;
   border: 0;
@@ -6,8 +6,10 @@
   margin-right: 5%;
   padding: 0;
   outline: none;
+  &--open {
+    background: url("../img/svg/menu-cross-white.svg") no-repeat center transparent;
+  }
   @media (min-width: 900px) {
     display: none;
   }
-
 }

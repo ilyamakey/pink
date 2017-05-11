@@ -1,5 +1,13 @@
 .navigation {
-  display: none;
+  @media (max-width: 899px) {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 100%;
+    z-index: 100;
+  }
   @media (min-width: 900px) {
     display: block;
     margin-right: 2%;
@@ -12,9 +20,30 @@
     color: @white;
     line-height: @18;
     text-decoration: none;
+    @media (max-width: 899px) {
+      align-self: center;
+      width: 100%;
+      line-height: @32;
+      padding: 20px;
+      background-color: @dark-blue;
+      &:last-child {
+        border-bottom: 1px solid #000;
+      }
+      &:first-child {
+        border-top: 1px solid #000;
+      }
+      &:nth-child(2n) {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: #000;
+      }
+    }
     @media (min-width: 1200px) {
       margin: 0 35px;
     }
+  }
 
+  &--hidden {
+    display: none;
   }
 }
