@@ -58,35 +58,15 @@ slider.addEventListener('mousedown', function(e) {
   };
 });
 
-// slider.addEventListener('touchstart', function(e) {
-//   console.log('touched');
-//   slider.getCoords();
-//   var shiftLeft = e.changedTouches[0].pageX - slider.left;
-//   // console.log(e.changedTouches[0].pageX);
-//
-//   function moveAt(e) {
-//     slider.getCoords();
-//     slider.style.left =  e.changedTouches[0].pageX - shiftLeft + 'px';
-//   };
-//
-//   // moveAt(e);
-//   slider.ontouchmove = function(e) {
-//     console.log('j');
-//     if (slider.left <= 0 && slider.right >= document.documentElement.clientWidth) {
-//       moveAt(e);
-//       // switchPagination();
-//   }
-// };
-//
-//   document.ontouchend = function () {
-//     document.ontouchmove = null;
-//       if (slider.left >= 0) {
-//         slider.style.left = 0 + 'px';
-//       } else if (slider.right <= document.documentElement.clientWidth) {
-//         slider.style.left = - (slider.clientWidth - document.documentElement.clientWidth) + 'px';
-//       }
-//   };
-// });
+//Touch events handler
+//touchstart
+// e.changedTouches[0].pageX
+// ontouchmove
+// ontouchend
+
+slider.addEventListener('touchstart', function(e) {
+  console.log('touched');
+});
 
 slider.ondragstart = function() {
   return false;
