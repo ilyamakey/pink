@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var path = require('path');
 var prefix = require('gulp-autoprefixer');
 var minCss = require('gulp-clean-css');
 var svgSprite = require('gulp-svg-sprites');
